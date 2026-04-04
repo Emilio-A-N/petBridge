@@ -64,6 +64,10 @@ app.listen(PORT, () => console.log(`🚀 Servidor listo en el puerto ${PORT}`));
 // Si tus archivos HTML están dentro de la carpeta "Diseño"
 app.use(express.static('Diseño')); 
 app.use('/Planning', express.static('Planning'));
+// Ruta principal: cuando alguien entra a la raíz, le mandamos al inicio
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/Diseño/HTML_CSS/inicio.html');
+});
 
 // Y asegúrate de tener una ruta para el home si no tienes un index.html en la raíz
 app.get('/', (req, res) => {
