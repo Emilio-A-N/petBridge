@@ -14,8 +14,9 @@
     "body-parser": "^2.2.2",
     "cors": "^2.8.6",
     "express": "^5.2.1",
-    "sqlite3": "5.1.6"  },
-    "engines": {
+    "sqlite3": "^5.1.6"
+  },
+  "engines": {
     "node": "20.x"
   }
 }
