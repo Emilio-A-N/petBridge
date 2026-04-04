@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta - PetBridge</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+<header id="header">
+    <div id="logo">
+        <a href="inicio.html">
+            <img src="/Planning/Logotipo/logo.png" alt="Petbridge Logo">
+        </a>
+    </div>
+
+    <nav id="panel">
+        <a href="portalAdoptante.html" class="textPanel">Adopta</a>
+        <a href="portalProtectora.html" class="textPanel">Protectoras</a>
+        <a href="portalColaborador.html" class="textPanel">Colabora</a>
+        <a href="#" class="textPanel">Calculadora</a>
+    </nav>
+
+    <div id="panel2">
+        <div id="visitante-links" style="display: flex; gap: 10px;">
+            <a href="login.html" class="textPanel2">Iniciar sesión</a>
+            <a href="registro.html" class="textPanel2">Crear una cuenta</a>
+        </div>
+
+        <div id="usuario-logueado" style="display: none; align-items: center; gap: 15px;">
+            <span id="saludo-usuario" style="color: #1A2B48; font-weight: bold; font-size: 14px;"></span>
+            <a href="#" id="link-mi-panel" class="textPanel2" style="background: #E67E6B; color: white; border-radius: 8px; padding: 8px 15px;">Mi Panel</a>
+            <button onclick="cerrarSesion()" style="background: none; border: none; color: #666; cursor: pointer; font-size: 12px; text-decoration: underline;">Salir</button>
+        </div>
+    </div>
+</header>
+
+<section id="bannerAdopta">
+    <h1>Encuentra a tu mejor amigo</h1>
+    <p>Cientos de animales esperan una segunda oportunidad</p>
+</section>
+
+<main id="contenedorAdopcion">
+    <div class="tarjetaAnimal">
+        <div class="contenedorFoto" onclick="cambiarFoto(this)">
+            <img src="/Planning/Galeria/perro1_a.jpg" alt="Foto Animal" class="fotoMascota">
+            <div class="indicadorFotos">Click para ver más 📸</div>
+        </div>
+        
+        <div class="infoAnimal">
+            <a href="fichaAnimal.html" class="enlaceNombre"><h2>Luna</h2></a>
+            
+            <a href="portalProtectora.html" class="enlaceProtectora">📍 Protectora Huellas Felices</a>
+            
+            <div class="detallesRapidos">
+                <span><strong>Edad:</strong> 8 años</span>
+                <span><strong>Raza:</strong> Teckel</span>
+            </div>
+            
+            <p class="descripcionCorta">Es una perrita muy tranquila, le encanta pasear por el sol y es muy sociable con otros perros.</p>
+            
+            <button class="botonCaja">Contactar para adoptar</button>
+        </div>
+    </div>
+
+    </main>
+
+<script>
+    // Pequeño truco visual para lo que pedías de las fotos
+    function cambiarFoto(elemento) {
+        let img = elemento.querySelector('.fotoMascota');
+        // Esto es un ejemplo, en el futuro usaremos un array de fotos de la DB
+        if(img.src.includes('_a')) {
+            img.src = img.src.replace('_a', '_b');
+        } else {
+            img.src = img.src.replace('_b', '_a');
+        }
+    }
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>

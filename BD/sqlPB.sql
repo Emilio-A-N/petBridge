@@ -1,0 +1,2 @@
+ALTER TABLE Adoptantes ADD COLUMN telefono TEXT;
+ALTER TABLE Adoptantes ADD COLUMN email TEXT;

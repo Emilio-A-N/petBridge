@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Colaborador - PetBridge</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+<header id="header">
+    <div id="logo">
+        <a href="inicio.html">
+            <img src="/Planning/Logotipo/logo.png" alt="Petbridge Logo">
+        </a>
+    </div>
+
+    <nav id="panel">
+        <a href="portalAdoptante.html" class="textPanel">Adopta</a>
+        <a href="portalProtectora.html" class="textPanel">Protectoras</a>
+        <a href="portalColaborador.html" class="textPanel">Colabora</a>
+        <a href="#" class="textPanel">Calculadora</a>
+    </nav>
+
+    <div id="panel2">
+        <div id="visitante-links" style="display: flex; gap: 10px;">
+            <a href="login.html" class="textPanel2">Iniciar sesión</a>
+            <a href="registro.html" class="textPanel2">Crear una cuenta</a>
+        </div>
+
+        <div id="usuario-logueado" style="display: none; align-items: center; gap: 15px;">
+            <span id="saludo-usuario" style="color: #1A2B48; font-weight: bold; font-size: 14px;"></span>
+            <a href="#" id="link-mi-panel" class="textPanel2" style="background: #E67E6B; color: white; border-radius: 8px; padding: 8px 15px;">Mi Panel</a>
+            <button onclick="cerrarSesion()" style="background: none; border: none; color: #666; cursor: pointer; font-size: 12px; text-decoration: underline;">Salir</button>
+        </div>
+    </div>
+</header>
+
+<section id="bannerColabora">
+    <h1>Muro de Colaboración</h1>
+    <p>Pequeñas acciones que salvan vidas. ¡Echa una mano!</p>
+</section>
+
+<main id="muroAnuncios">
+    <article class="fichaAnuncio">
+        <div class="cabeceraAnuncio">
+            <span class="etiquetaUrgente">URGENTE</span>
+            <h2>Necesitamos: Casa de acogida para Toby</h2>
+        </div>
+        
+        <div class="cuerpoAnuncio">
+            <div class="autorAnuncio">
+                <p><strong>Protectora:</strong> Huellas Felices</p>
+                <p><strong>Zona:</strong> Fuenlabrada, Madrid</p>
+            </div>
+            <p class="descripcionAnuncio">
+                Toby es un perro senior que acaba de ser operado. No puede estar en el refugio por el frío y la humedad. Necesitamos a alguien que lo cuide durante 2 semanas hasta que reciba el alta definitiva.
+            </p>
+        </div>
+        
+        <div class="pieAnuncio">
+            <button class="botonCaja">Quiero ayudar</button>
+        </div>
+    </article>
+
+    <article class="fichaAnuncio">
+        <div class="cabeceraAnuncio">
+            <span class="etiquetaEvento">EVENTO</span>
+            <h2>Necesitamos: Voluntarios para evento en Kiwoko</h2>
+        </div>
+        
+        <div class="cuerpoAnuncio">
+            <div class="autorAnuncio">
+                <p><strong>Protectora:</strong> Amigos Peludos</p>
+                <p><strong>Zona:</strong> Leganés, Madrid</p>
+            </div>
+            <p class="descripcionAnuncio">
+                Estaremos este sábado dando a conocer a nuestros animales y recogiendo pienso. Necesitamos a 3 personas para turnos de mañana y tarde para informar a los clientes.
+            </p>
+        </div>
+        
+        <div class="pieAnuncio">
+            <button class="botonCaja">Apuntarme</button>
+        </div>
+    </article>
+</main>
+<script src="main.js"></script>
+
+</body>
+</html>

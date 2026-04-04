@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protectoras - PetBridge</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+<header id="header">
+    <div id="logo">
+        <a href="inicio.html">
+            <img src="/Planning/Logotipo/logo.png" alt="Petbridge Logo">
+        </a>
+    </div>
+
+    <nav id="panel">
+        <a href="portalAdoptante.html" class="textPanel">Adopta</a>
+        <a href="portalProtectora.html" class="textPanel">Protectoras</a>
+        <a href="portalColaborador.html" class="textPanel">Colabora</a>
+        <a href="#" class="textPanel">Calculadora</a>
+    </nav>
+
+    <div id="panel2">
+        <div id="visitante-links" style="display: flex; gap: 10px;">
+            <a href="login.html" class="textPanel2">Iniciar sesión</a>
+            <a href="registro.html" class="textPanel2">Crear una cuenta</a>
+        </div>
+
+        <div id="usuario-logueado" style="display: none; align-items: center; gap: 15px;">
+            <span id="saludo-usuario" style="color: #1A2B48; font-weight: bold; font-size: 14px;"></span>
+            <a href="#" id="link-mi-panel" class="textPanel2" style="background: #E67E6B; color: white; border-radius: 8px; padding: 8px 15px;">Mi Panel</a>
+            <button onclick="cerrarSesion()" style="background: none; border: none; color: #666; cursor: pointer; font-size: 12px; text-decoration: underline;">Salir</button>
+        </div>
+    </div>
+</header>
+
+<section id="areaBusqueda">
+    <div class="contenedorFiltros">
+        <h1>Nuestras Protectoras Aliadas</h1>
+        <div class="barraFiltro">
+            <input type="text" placeholder="Buscar por ciudad o nombre...">
+            <button class="botonFiltro">Filtrar por distancia 📍</button>
+        </div>
+    </div>
+</section>
+
+<main id="listadoProtectoras">
+    <div class="cajaProtectora">
+        <div class="infoPrincipal">
+            <h2>Protectora "Huellas Felices"</h2>
+            <p class="direccion">📍 Calle Falsa 123, Madrid</p>
+        </div>
+        <div class="historia">
+            <h3>Nuestra Historia</h3>
+            <p>Fundada en 2015, hemos rescatado a más de 500 animales de las calles, dándoles una segunda oportunidad y cuidados médicos de calidad.</p>
+        </div>
+        <div class="acciones">
+            <a href="#" class="botonCaja">Ver animales en adopción</a>
+            <a href="#" class="botonContacto">Contactar</a>
+        </div>
+    </div>
+
+    <div class="cajaProtectora">
+        <div class="infoPrincipal">
+            <h2>Asociación "Amigos Peludos"</h2>
+            <p class="direccion">📍 Av. de la Paz 45, Barcelona</p>
+        </div>
+        <div class="historia">
+            <h3>Nuestra Historia</h3>
+            <p>Somos un grupo de voluntarios unidos por el amor a los animales. Nos especializamos en el rescate de perros senior y casos especiales.</p>
+        </div>
+        <div class="acciones">
+            <a href="#" class="botonCaja">Ver animales en adopción</a>
+            <a href="#" class="botonContacto">Contactar</a>
+        </div>
+    </div>
+</main>
+<script src="main.js"></script>
+
+</body>
+</html>

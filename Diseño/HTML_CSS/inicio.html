@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de inicio</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+
+
+
+<body>
+<header id="header">
+    <div id="logo">
+        <a href="inicio.html">
+            <img src="/Planning/Logotipo/logo.png" alt="Petbridge Logo">
+        </a>
+    </div>
+
+    <nav id="panel">
+        <a href="portalAdoptante.html" class="textPanel">Adopta</a>
+        <a href="portalProtectora.html" class="textPanel">Protectoras</a>
+        <a href="portalColaborador.html" class="textPanel">Colabora</a>
+        <a href="#" class="textPanel">Calculadora</a>
+    </nav>
+
+<div id="panel2">
+    <div id="visitante-links">
+        <a href="login.html" class="textPanel2">Iniciar sesión</a>
+        <a href="registro.html" class="textPanel2">Registro</a>
+    </div>
+
+    <div id="usuario-logueado" style="display: none; align-items: center; gap: 10px;">
+        <span id="saludo-usuario"></span>
+        <a href="#" id="link-mi-panel" class="textPanel2">Mi Panel</a>
+        <button onclick="cerrarSesion()" class="boton-salir">Salir</button>
+    </div>
+</div>
+</header>
+
+<section id="cuerpoPagina">
+    <div class="contenidoCP">
+        <h1>¿Me vas a adoptar?</h1>
+        <button class="bontonAdoptaFoto">Descubre cómo</button>
+    </div>
+</section>
+<section id="seccionInfo">
+    <div class="cajaInformativa">
+        <div class="iconoCaja">🐶</div> 
+        <h2>Adopción</h2>
+        <p>Encuentra a tu compañero ideal entre cientos de animales que buscan un hogar responsable.</p>
+        <a href="#" class="botonCaja">Ver animales</a>
+    </div>
+
+    <div class="cajaInformativa">
+        <div class="iconoCaja">📚</div>
+        <h2>Formación</h2>
+        <p>Aprende todo sobre el cuidado, comportamiento y salud de tu mascota.</p>
+        <a href="#" class="botonCaja">Aprender más</a>
+    </div>
+
+    <div class="cajaInformativa">
+        <div class="iconoCaja">🆘</div>
+        <h2>Ayuda</h2>
+        <p>¿Quieres colaborar en el cuidado de los animales? Tu aportación es fundamental.</p>
+        <a href="#" class="botonCaja">Buscar protectora</a>
+    </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>

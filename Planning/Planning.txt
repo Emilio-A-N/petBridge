@@ -1,0 +1,116 @@
+Planning
+
+-------------------------------Investigaremos el mercado y la competencia. No plagiamos, comparamos y nos inspiramos en sus errores para hacerlo mejor--------------------------------
+
+
+En la actualidad, hay dos aplicaciones que ya están funcionando que serían nuestras competencias directas. Estas son Amadog y Miwuki. 
+
+Miwuki pet shelter es un buscador que une protectoas. Filtra por especie, tamaño, edad y ubicación. Ayuda también a las protectoras a gestionar sus animales y sus donaciones.
+Frente a su macrocatálogo, nuestra forma de competir con ellos será haciendo hincapié en la formación de los adoptantes para con sus mascotas. Además, es una app donde hacen
+mucho hincapie en perros y gatos y aunque también hay reptiles y aves, la información es nula o extremadamente sesgada acerca de sus cuidados. 
+
+Podemos apreciar que en su pagina de inicio, encontramos elementos con las diferentes ofertas a las que poder acceder para consultar. Estas ofertas tienen nombre y zona de 
+procedencia. Al acceder, encontramos fotos y toda la informacion relacionada. (nombre, apellidos, edad, raza) describe el comportamiento y curiosidades a través de etiquetas. 
+Para poder interactuar es necesario realizar un registro y un login. La forma de ponerse en contacto con la protectora o particular es generar un aviso en la oferta. 
+En su menú de inicio hay varias opciones. Estas son Protectoras, dar en adopción, buscar tu match, y bolsa de pienso. 
+Tienen una interfaz visual sencilla. Dos tonalidades de azules y blancos. 
+
+¿Como mejorarlo?
+
+	- Implantaremos un mapa interactivo en el apartado protectoras, donde los usuarios de adopción puedan investigar que protectoras están mas cerca. 
+	- Implantaremos una calculadora de gastos generales de los que pueda aprovecharse el usuario de adopción. 
+	- Implantaremos un test de idoneidad. Para proporcional valor de la aplicación al usuario adoptante indeciso.
+	- Cambio en la paleta de colores. 
+
+Amadog actua de forma muy distinta. Es competencia aunque no del todo directa ya que en la pantalla principal podemos ver elementos de publicidad de su app movil. Hay elementos
+informativos a modo de periodico digital, pero no se puede ver, ni interactuar de forma directa desde la web. 
+
+
+
+
+----------------------------Disposicion de los distintos elementos dentro del proyecto. Este diseño facilita la navegacion y la usabilidad de nuestra app-----------------------------
+
+Esquema de navegación:
+
+	- Barra de navegación (Header). Será una barra fija para que siempre esté a mano y accesible en todo momento para facilitar la navegación. Colocaremos a la izquieda el logotipo y
+a la derecha el acceso a las distintas rutas posibles (Protectoras, adoptantes, colaboradores). A la derecha del todo irá nuestro botón de registrarse y login.
+	- En el pie de pagina (Footer). Tendremos un apartado para las redes sociales (Que tendremos en un futuro de la app) y un apartado para contactar directamente con nosotros.
+
+Disposición de la página de inicio:
+
+	- En el centro, en el apartado mas visible, pondremos una imagen emotiva con nuestro eslogan. 		
+	- Tres bloques en horizontal con información acerca de adopción, formación y ayuda.
+	- Un apartado de mascotas destacadas
+
+Anatomía de las fichas.
+
+- Ficha de protectora:
+	- Izquierda 60%. Galeria de fotos.
+	- Derecha 40%. Datos rapidos.(Nombre, Zona, etc)
+	- Abajo. Descripción detallada de cada usuario protectora. 
+
+- Ficha de mascota:
+	- Izquierda 60%. Galeria de fotos.
+	- Derecha 40%. Datos rapidos.(Nombre, edad, etc)
+	- Abajo. Descripción detallada de cada objeto mascota. 	
+
+
+
+-------------------------------------Elementos visuales. Definimos que tipo de imagineria vamos a usar. (inconicas, vectores, realistas...)-------------------------------------------
+
+Estilo de la fotografía:
+	- Criterio. Usaremos fotos extraidas de bancos de fotos y posiblemente generadas por IA.
+	- Finalidad. Generar conexión con los tres tipos de usuario.
+
+Iconografía:
+Usaremos iconos sencillos, sin rellenos. Los colores y las fotografías tendrán mas peso en el impacto visual.
+
+
+
+--------------Interacciones. Como interactua la aplicacion con el usuario. ¿que info mostraremos en la app?, ¿como modificará el visitante el aspecto de la pagina?-------------------
+
+Flujo de información. (Se codificarán con JS).
+	- Eventos de click para los botones.
+	- Eventos de cambio para las calculadoras.
+	- Eventos de arrastrar y soltar para subir fotografías.
+	- Eventos de pasar el raton para efectos visuales mas atractivos.
+
+Recorrido del adoptante.
+	- Paso1. El usuario empieza en la página de inicio teniendo acceso a todos los elementos y tiene dos caminos (camino protectora, camino mascotas destacadas).
+	- Paso2. Realiza un evento click en protectoras, la página se refresca y accede a todas las fichas de protectora con su información.
+	- Paso3. A través de otro evento click puede seleccionar una ficha. La página se refresca y accede de nuevo a su información y a los animales en adopción.
+	- Paso4. A través de otro evento click en buscar puede filtrar según preferencias. La pagina no se refresca y a través de las ordenes del usuario, se filtran las mascotas.
+	- Paso5. Por otro lado, puede navegar por la página sin filtrar y buscar. A través de otro evento click en la ficha del animal, accederá a esta.
+	- Paso6. Podrá navegar por la ficha. Podrá pulsar sobre el apartado "Solicitar información" donde la página se refrescará y accederá a un cuestionario para intercambiar 
+			 información.
+	- Paso7. Si opta por el camino de mascotas destacadas, se actualizará la página y accederá a la ficha del animal y repetir el Paso6.
+
+Recorrido de protectora.
+	- Paso1. El usuario empieza en la página de inicio teniendo acceso a todos los elementos. Para poder realizar gestiones de su perfil e información tendrá que acceder al
+			 apartado "Iniciar sesión". 
+	- Paso2. La pagina se actualiza y el usuario deberá ingresar con su usario y contraseña. La pagina se actualiza y acceden a la pagina de inicio, apareciento un apartado
+			 llamado "Mi perfil".
+	- Paso3. Con un evento de pasar el ratón, aparecerá un menu con las distintas opciones, pudiendo acceder con evento click al apartado "Dar en adopcion". La página se 
+			 actualiza y accede a la posibilidad de crear una ficha de animal, que se guardará en su perfil.
+	- Paso4. Tras esto, el usuario recibe un evento visual diciendo "Publicado con exito".
+	
+Recorrido de colaborador.
+	- Paso1. El usuario empieza en la página de inicio teniendo acceso a todos los elementos. Podrá acceder con evento click al portal de ayudas. 
+	- Paso2. La pagina se actualiza y accede a un mapa interactivo con iconos (usuario protectora). Al pusar un icono, accederá al resumen de la protectora. 
+	- Paso3. Si está conforme, clicará en "Me apunto" y se le facilitará el whatsapp de la protectora.
+	
+Recorrido de calculadora.
+	- Paso1. El usuario entra en el "Portal de Calculadoras".
+	- Paso2. Selecciona el animal que está pensando adoptar (ej: Gato adulto).
+	- Paso3. Aparecen barras deslizantes (sliders) para que el usuario elija la calidad del pienso o si quiere incluir seguro médico.
+	- Paso4. Respuesta en tiempo real: Conforme mueve las barras, un número en grande (el presupuesto mensual) sube o baja automáticamente.
+	- Paso5. Al final, la web le ofrece un botón de "Descargar PDF" con este presupuesto para que lo comente con su familia.
+
+
+----------------------------------------------------------------------Pruebas y testing-----------------------------------------------------------------------------------------------
+----------------------------Dejaremos indicado desde el principio, que pruebas vamos a realizar en nuestra aplicación para comprobar su funcionamiento.-------------------------------
+
+Crearemos un perfil para cada uno de los usuarios. 
+Para el usuario protectora intentaremos crear un perfil y crear 3 perfiles de mascotas.
+Para el el rol adoptante intentaremos solicitar información de la protectora e información referente a animales. 
+Para el usuario colaborador comprobar que la conectividad con la protectora.

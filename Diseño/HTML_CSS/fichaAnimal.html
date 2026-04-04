@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Mascota - PetBridge</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+<header id="header">
+    <div id="logo">
+        <a href="inicio.html">
+            <img src="/Planning/Logotipo/logo.png" alt="Petbridge Logo">
+        </a>
+    </div>
+
+    <nav id="panel">
+        <a href="portalAdoptante.html" class="textPanel">Adopta</a>
+        <a href="portalProtectora.html" class="textPanel">Protectoras</a>
+        <a href="portalColaborador.html" class="textPanel">Colabora</a>
+        <a href="#" class="textPanel">Calculadora</a>
+    </nav>
+
+    <div id="panel2">
+        <div id="visitante-links" style="display: flex; gap: 10px;">
+            <a href="login.html" class="textPanel2">Iniciar sesión</a>
+            <a href="registro.html" class="textPanel2">Crear una cuenta</a>
+        </div>
+
+        <div id="usuario-logueado" style="display: none; align-items: center; gap: 15px;">
+            <span id="saludo-usuario" style="color: #1A2B48; font-weight: bold; font-size: 14px;"></span>
+            <a href="#" id="link-mi-panel" class="textPanel2" style="background: #E67E6B; color: white; border-radius: 8px; padding: 8px 15px;">Mi Panel</a>
+            <button onclick="cerrarSesion()" style="background: none; border: none; color: #666; cursor: pointer; font-size: 12px; text-decoration: underline;">Salir</button>
+        </div>
+    </div>
+</header>
+
+<main class="contenedor-ficha">
+    <div class="layout-ficha">
+        
+        <section class="galeria-animal">
+            <div class="foto-principal">
+                <img src="/Planning/Galeria/perro1_a.jpg" alt="Luna" id="mainImg">
+            </div>
+            <div class="miniaturas">
+                <img src="/Planning/Galeria/perro1_a.jpg" onclick="document.getElementById('mainImg').src=this.src">
+                <img src="/Planning/Galeria/perro1_b.jpg" onclick="document.getElementById('mainImg').src=this.src">
+                <img src="/Planning/Galeria/perro1_c.jpg" onclick="document.getElementById('mainImg').src=this.src">
+            </div>
+        </section>
+
+        <section class="detalle-info">
+            <div class="cabecera-ficha">
+                <h1>Luna</h1>
+                <span class="tag-especie">Perro • Hembra</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-item"><strong>Edad:</strong> 8 años</div>
+                <div class="stat-item"><strong>Raza:</strong> Teckel</div>
+                <div class="stat-item"><strong>Peso:</strong> 6kg</div>
+                <div class="stat-item"><strong>Ubicación:</strong> Madrid</div>
+            </div>
+
+            <div class="bloque-texto">
+                <h3>Sobre mí</h3>
+                <p>Luna es una compañera ejemplar. Fue rescatada hace dos meses y desde entonces no ha dejado de mostrar agradecimiento. Es extremadamente tranquila, ideal para vivir en un piso. Se lleva bien con gatos y es muy paciente con los niños.</p>
+            </div>
+
+            <div class="salud-check">
+                <h3>Estado de Salud</h3>
+                <ul>
+                    <li>✅ Vacunas al día</li>
+                    <li>✅ Microchip implantado</li>
+                    <li>✅ Esterilizada</li>
+                    <li>✅ Desparasitada</li>
+                </ul>
+            </div>
+
+            <div class="info-protectora-peque">
+                <p>Cuidada por: <a href="portalProtectora.html"><strong>Protectora Huellas Felices</strong></a></p>
+            </div>
+
+            <button class="botonCaja">Quiero adoptar a Luna</button>
+        </section>
+
+    </div>
+</main>
+<script src="main.js"></script>
+
+</body>
+</html>

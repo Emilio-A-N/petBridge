@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - PetBridge</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body class="body-panel">
+
+<header id="header">
+    <div id="logo">
+        <a href="inicio.html">
+            <img src="/Planning/Logotipo/logo.png" alt="Petbridge Logo">
+        </a>
+    </div>
+
+    <nav id="panel">
+        <a href="portalAdoptante.html" class="textPanel">Adopta</a>
+        <a href="portalProtectora.html" class="textPanel">Protectoras</a>
+        <a href="portalColaborador.html" class="textPanel">Colabora</a>
+        <a href="#" class="textPanel">Calculadora</a>
+    </nav>
+
+<div id="panel2">
+    <div id="visitante-links">
+        <a href="login.html" class="textPanel2">Iniciar sesión</a>
+        <a href="registro.html" class="textPanel2">Registro</a>
+    </div>
+
+    <div id="usuario-logueado" style="display: none; align-items: center; gap: 10px;">
+        <span id="saludo-usuario"></span>
+        <a href="#" id="link-mi-panel" class="textPanel2">Mi Panel</a>
+        <button onclick="cerrarSesion()" class="boton-salir">Salir</button>
+    </div>
+</div>
+</header>
+
+<main class="contenedor-panel">
+    <aside class="sidebar">
+        <button class="tab-btn activo">🐾 Mis Animales</button>
+        <button class="tab-btn">📢 Mis Anuncios</button>
+        <button class="tab-btn">⚙️ Perfil Protectora</button>
+    </aside>
+
+    <section class="contenido-gestion">
+        <div class="cabecera-seccion">
+            <h2>Gestión de Animales</h2>
+            <button class="bontonAdoptaFoto" onclick="abrirModal()">+ Añadir Nuevo</button>
+        </div>
+
+        <table class="tabla-gestion">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Nombre</th>
+                    <th>Especie</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="/Planning/Galeria/perro1_a.jpg" class="img-mini"></td>
+                    <td>Luna</td>
+                    <td>Perro (Teckel)</td>
+                    <td><span class="tag-estado">Buscando Hogar</span></td>
+                    <td>
+                        <button class="btn-editar">✏️</button>
+                        <button class="btn-borrar">🗑️</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<div id="modalAnimal" class="modal">
+    <div class="caja-login">
+        <h2>Registrar nueva mascota</h2>
+        <form class="formulario-login">
+            <div class="campo">
+                <label>Nombre del animal</label>
+                <input type="text" placeholder="Ej: Rayo">
+            </div>
+            <div class="campo-doble">
+                <div class="campo">
+                    <label>Especie</label>
+                    <input type="text" placeholder="Perro, Gato...">
+                </div>
+                <div class="campo">
+                    <label>Raza</label>
+                    <input type="text" placeholder="Mestizo, Husky...">
+                </div>
+            </div>
+            <div class="campo">
+                <label>Descripción / Historia</label>
+                <textarea placeholder="Cuéntanos sobre él..." rows="4"></textarea>
+            </div>
+            <button type="button" class="botonCaja" onclick="cerrarModal()">Guardar en el sistema</button>
+        </form>
+    </div>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>

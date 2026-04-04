@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - PetBridge</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body class="body-login">
+
+<header id="header">
+    <div id="logo">
+        <a href="inicio.html">
+            <img src="/Planning/Logotipo/logo.png" alt="Petbridge Logo">
+        </a>
+    </div>
+
+    <nav id="panel">
+        <a href="portalAdoptante.html" class="textPanel">Adopta</a>
+        <a href="portalProtectora.html" class="textPanel">Protectoras</a>
+        <a href="portalColaborador.html" class="textPanel">Colabora</a>
+        <a href="#" class="textPanel">Calculadora</a>
+    </nav>
+
+    <div id="panel2">
+        <div id="visitante-links" style="display: flex; gap: 10px;">
+            <a href="login.html" class="textPanel2">Iniciar sesión</a>
+            <a href="registro.html" class="textPanel2">Crear una cuenta</a>
+        </div>
+
+        <div id="usuario-logueado" style="display: none; align-items: center; gap: 15px;">
+            <span id="saludo-usuario" style="color: #1A2B48; font-weight: bold; font-size: 14px;"></span>
+            <a href="#" id="link-mi-panel" class="textPanel2" style="background: #E67E6B; color: white; border-radius: 8px; padding: 8px 15px;">Mi Panel</a>
+            <button onclick="cerrarSesion()" style="background: none; border: none; color: #666; cursor: pointer; font-size: 12px; text-decoration: underline;">Salir</button>
+        </div>
+    </div>
+</header>
+
+<main class="contenedor-login">
+    <div class="caja-login caja-registro">
+        <div class="login-header">
+            <h1>Únete a PetBridge</h1>
+            
+            <div class="selector-tipo">
+                <button class="btn-tipo activo" onclick="cambiarRegistro('adoptante')">Soy Adoptante</button>
+                <button class="btn-tipo" onclick="cambiarRegistro('protectora')">Soy Protectora</button>
+            </div>
+        </div>
+
+        <form action="#" class="formulario-login">
+            <div class="campo">
+                <label>Correo Electrónico</label>
+                <input type="email" placeholder="email@ejemplo.com" required>
+            </div>
+            
+            <div class="campo">
+                <label>Contraseña</label>
+                <input type="password" placeholder="Mínimo 8 caracteres" required>
+            </div>
+
+            <div id="seccion-adoptante">
+                <div class="campo">
+                    <label>Nombre y Apellidos</label>
+                    <input type="text" placeholder="Tu nombre completo">
+                </div>
+                <div class="campo">
+                    <label>Teléfono de contacto</label>
+                    <input type="tel" placeholder="600 000 000">
+                </div>
+            </div>
+
+            <div id="seccion-protectora" style="display: none;">
+                <div class="campo">
+                    <label>Nombre de la Protectora</label>
+                    <input type="text" placeholder="Ej: Huellas Felices">
+                </div>
+                <div class="campo-doble">
+                    <div class="campo">
+                        <label>Nombre Fiscal</label>
+                        <input type="text" placeholder="Razón Social">
+                    </div>
+                    <div class="campo">
+                        <label>CIF / NIF</label>
+                        <input type="text" placeholder="A12345678">
+                    </div>
+                </div>
+                <div class="campo">
+                    <label>Localización (Ciudad)</label>
+                    <input type="text" placeholder="Ej: Madrid, Fuenlabrada...">
+                </div>
+                <div class="campo">
+                    <label>Teléfono Oficial</label>
+                    <input type="tel" placeholder="910 000 000">
+                </div>
+            </div>
+
+            <button type="submit" class="botonCaja">Crear mi cuenta</button>
+        </form>
+
+        <div class="login-footer">
+            <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </div>
+    </div>
+</main>
+
+<script>
+    function cambiarRegistro(tipo) {
+        const secAdoptante = document.getElementById('seccion-adoptante');
+        const secProtectora = document.getElementById('seccion-protectora');
+        const botones = document.querySelectorAll('.btn-tipo');
+
+        if (tipo === 'adoptante') {
+            secAdoptante.style.display = 'block';
+            secProtectora.style.display = 'none';
+            botones[0].classList.add('activo');
+            botones[1].classList.remove('activo');
+        } else {
+            secAdoptante.style.display = 'none';
+            secProtectora.style.display = 'block';
+            botones[0].classList.remove('activo');
+            botones[1].classList.add('activo');
+        }
+    }
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>

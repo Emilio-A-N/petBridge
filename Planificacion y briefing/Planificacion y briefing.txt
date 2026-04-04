@@ -1,0 +1,177 @@
+Planificacion y briefing.
+
+---------------------------------------------------¿Que es vuestro proyecto y que no es vuestro proyecto? (con todo detalle).--------------------------------------------------------
+
+Petbridge será una app web sin ánimo de lucro, desarrollada para facilitar y mejorar la adopción de  mascotas. Debido a la gran cantidad de animales sin hogar, gran parte
+de las protectoras se ven desbordadas para gestionar el manejo, la calidad de vida, alimentación y demas factores que conlleva el cuidado animal. Por otro lado, cada vez es mayor 
+la tendencia de las familias a incorporar un nuevo miembro. Lo que hace vital, que ambas partes de este entorno dispongan de amplia información y sean correctamente puestas en
+contacto entre ellas. Esta aplicación será el puente perfecto entre protectora y adoptante y será una herramienta que ayude a las tres partes implicadas(Animal, adoptante y 
+protectora). 
+
+
+	Descartamos la idea de usar esta aplicación web como negocio, venta o trafico de animales. Tampoco será una red social, ni un catalogo de ventas.
+	
+
+-------------------------------------------------------------------------¿Que queremos conseguir?-------------------------------------------------------------------------------------
+
+Con esta aplicación facilitaremos el intercambio de recursos e información entre nuestros distintos tipos de usuarios. Distinguimos 3 tripos de usuarios:
+- Protectora
+- Adoptante
+- Colaborador
+
+El usuario protectora podrá exponer sus mascotas junto con toda la información que consideren oportuna. Además podran exponer información general de la mascota, como puede
+ser el nombre, especie, raza, edad, estado de salud, etc, mientras que por otro lado, el usuario adoptante, podrá acceder a la información presentada por el usuario protectora.
+Por otro lado, esta aplicación pondría en contacto al usuario colaborador con el usuario protectoras. Tendrá acceso a todos los perfiles y desde ahí podrá valorar con que 
+protectora desea colaborar. 
+Se podrá localizar la protectora a través de google maps incorporado.
+
+La información que aportarán las protectoras guarda relación con las mascotas que ofrecerán en adopción, su estado de salud, su información general, su actualidad veterinaria
+además de ofrecer manuales, tips y requerimientos del manejo y convivencia animal. Podrán darse a conocer. Expondrán cual es su localización, forma de trabajar, etc.
+
+La información que aportarán los adoptantes se reservará para la comunicación con las protectoras al poder tratarse de información sensible o personal.
+
+Los usuarios colaboradores tendrán la opción de acceder a la información de las protectoras para ponerse en contacto con ellas si así lo desean.
+
+
+
+-----------------------------------¿A que publico nos dirigimos?(primordial de estudio exhaustivo de cual seria nuestro cliente o nuestro usuario objetivo)---------------------------
+								
+Nos dirigimos a dos perfiles de clientes totalmente opuestos, pero con la misma finalidad. 
+
+La app será orientada para las protectoras que trabajen activamente en el rescate de mascotas y en su adaptación a una nueva vida. Será orientado a protectoras de todo tipo de animales domesticos o que tengan cualquier tipo de relación
+con el rescate animal. Hablamos de refugios, protectoras de casas de acogida, protectoras de especies exoticas, santuarios, etc.
+
+Por otro lado, será orientada a personas que quieran adoptar un nuevo miembro en su vida. Tan publico son las familias de todo tipo, situación y cantidad de miembros, como personas
+individuales o parejas. La ayuda que ofrecerá esta aplicación está destinada a publicos de todo tipo de poder adquisitivo. Para los mas pudientes, ayudará a decidir que mascota 
+encaja mejor en su vida según sus preferencias y para los que van mas al día, obtendran el mismo asesoramiento. 
+
+Va dirigida a aquel particular u organización que, aunque no quiera adoptar ninguna mascota, quiera ayudar a los animales. Ya sea con su tiempo, trabajo o donativos para con las 
+protectoras. 
+
+Dado que esta aplicación busca el bienestar animal, también estará dedicada a aquellos propietarios que, por la razón que sea, ya no quieren tener una mascota en sus casas. Se
+entiende que estas situaciones, no siempre se dan por hartazgo o malas decisiones, sino también por cambios de rumbo en una vida. Con esto se quiere combatir el sacrificio y el
+abandono de las mascotas.
+
+-----------------------------------------------------------------Contenidos y recursos que se incluyen en el proyecto-----------------------------------------------------------------
+
+ Material de comunicación:
+ -Textos
+ -Material multimedia
+ 
+
+ Material multimedia:
+ -Imagenes generadas por inteligencia artificial
+ -Logotipo de la app generada por inteligencia artificial
+ 
+  Herramientas:
+ -Portal de protectoras.
+ -Portal de adoptantes.
+ -Portal de ayudas.
+ -Portal de calculadoras.
+ -Portal informativo.
+ 
+ 
+ Apis externas: 
+ -Google maps
+ 
+ -----------------------------------------------------------------------------------Presupuesto ---------------------------------------------------------------------------------
+ 
+El presupuesto con el que contamos podrá verse afectado según el volumen de información que aporten las protectoras y los adoptantes. Se verá modificado debido al almacenamiento
+de imagenes con la que se trabaje. 
+
+Además de estos gastos variables, tenemos también gastos fijos/recurrentes. Estos son el mantenimiento del dominio y el hosting:
+
+Nombre de gasto ||  Tipo de Gasto   || Estimación anual
+
+Dominio         ||  Fijo/Recurrente ||   15 - 20 €
+Hosting         ||  Fijo/Recurrente	||   200 - 300€
+(Servidor y bd)
+Almacenamiento  ||  Variable        ||   10 - 60€
+
+Costes de recursos humanos por mantenimiento de la app a negociar.
+
+--------------------------------------------------------------------------Tiempo que durará el desarrollo------------------------------------------------------------------------
+
+Para el correcto desarrollo del briefing, planning, desarrollo, testing y cuestionar opciones de mejora y actualizaciones, se estima que el desarrollo ocupará como mínimo hasta 
+el día 7 de Abril del 2026. Seguiremos el mismo orden descrito anteriormente.
+
+Mas allá de la fecha marcada, se realizarán actualizaciones y mejoras con objetivo de desarrollar mis habilidades de programación, por lo que la vida del servicio se alargará
+indefinidamente. 
+
+
+-----------------------------------------Investigaremos a fondo sobre la empresa que nos contrata sus productos o servicios, su funcionamiento,-----------------------------------------
+-----------------------------------------su posicionamiento en el mercado y reclamar toda la información sobre branding-----------------------------------------------------------------
+
+Petbridge es una empresa sin ánimo de lucro que nace del tiempo libre y la necesidad de aprender de uno de sus miembros que fue antiguo auxiliar veterinario. Tras estar unos 
+cuantos años en el sector ha podido descubir de primera mano y por experiencias desagradables que hay problemas que tardan en solucionarse. Es por ello que nace la idea de 
+desarrollar esta aplicación. 
+
+En la actualidad, hay dos aplicaciones que ya están funcionando que serían nuestras competencias directas. Una de ellas es Amadog y Miwuki. 
+
+Miwuki pet shelter es un buscador que une protectoas. Filtra por especie, tamaño, edad y ubicación. Ayuda también a las protectoras a gestionar sus animales y sus donaciones.
+Frente a su macrocatálogo, nuestra forma de competir con ellos será haciendo hincapié en la formación de los adoptantes para con sus mascotas. Además, es una app donde hacen
+mucho hincapie en perros y gatos y aunque también hay reptiles y aves, la información es nula o extremadamente sesgada acerca de sus cuidados. 
+
+En cuanto a Amadog, actuan de forma muy similar. Es una competencia mas dificil, puesto que estos si ofrecen información, aunque no acerca de adopciones. Ofrecen información 
+acerca de seguros, hoteles, centros veterinarios. Nuestra estrategia para combatir contra ellos, será la misma plena información que dispondrá el cliente. 
+
+Ambas aplicaciones trabajan también con particulares como protectoras. Descartamos hacer eso. Aunque ofreceremos la opción de que los particulares puedan ofrecer sus mascotas
+a protectoras, no fomentaremos que la aplicación pueda usarse como un milanuncios de animales. Si alguien necesita o quiere deshacerse de su mascota, solo se ayudará a que se
+deje en las mejores manos y no en manos de un desconocido. 
+
+Puntos a destacar del branding. 
+
+- Colores. Queremos solucionar un problema, pero también fomentar la ilusión por compartir nuestras vidas con una mascota. Los colores serán:
+	- E67E6B, coral terracota. Calido buscando ilusión, pero sin ser estridente buscando un toque de seriedad. Apartado de ayuda. 
+	- 4A7C59, verde bosque. Su relación visual con la naturaleza. Lo usaremos para marcar los exitos de la aplicación. Ej: Anuncio de un animal felizmente adoptado.
+	- 2C5F88, azul prusiano. Calma y estabilidad. Lo usaremos para la estructura y el texto.
+	- F8F9F2, blanco hueso. Por evitar el blanco simple. Lo usaremos para el fondo.
+- Tipografía (La letra). Usaremos una fuente estandar.
+- Logotipo. Usaremos un logotipo creado por adobe Spark. Este será una ninfa carolina, con el eslogan "Ilumina su vida. Adopta".
+- Estilo de Imágenes
+- Botones y Componentes
+
+------------------------------Definimos los objetivos que perseguimos desarrollando nuestra app. ¿Por que usamos esta app?. Cuantificar con cifras-----------------------------------
+
+Debemos definir cuáles son los objetivos que perseguimos desarrollando
+nuestra aplicación. ¿Para qué es necesaria nuestra web? ¿Por qué
+utilizamos esta herramienta de marketing y no otra? ¿Qué pretendemos
+conseguir con nuestra web? Si es posible, estos objetivos deberían ser
+cuantificables, es decir, expresarlos en cifras.
+
+
+Nuestro objetivos como desarrolladores de esta aplicación web es solucionar el problema relacionado con el mundo de la adopción. 
+
+
+-------------------------------------------Aspectos tecnicos necesarios para el desarrollo de la aplicacion. (tecnologias, resoluciones)---------------------------------------------
+
+
+Tecnológias para el front-end:
+- Estructura: html.
+- Diseño visual: Css.
+- Recibir datos, procesarlos y actualizar interfaz: JavaScript.
+
+Tecnológias para el back-end:
+- Gestionar lógica: Java.
+
+Tecnológias para la comunicación:
+- Transportar datos del servidor al navegador: Json.
+
+Tecnologías de bd:
+- Estructura de tablas: SQL.
+- Servidor: XAMPP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
