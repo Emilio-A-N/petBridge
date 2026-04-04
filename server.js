@@ -61,3 +61,10 @@ app.get('/api/animales', (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`🚀 Servidor listo en el puerto ${PORT}`));
+// Si tus archivos HTML están dentro de la carpeta "Diseño"
+app.use(express.static('Diseño')); 
+
+// Y asegúrate de tener una ruta para el home si no tienes un index.html en la raíz
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/Diseño/login.html'); // O el nombre de tu página principal
+});
