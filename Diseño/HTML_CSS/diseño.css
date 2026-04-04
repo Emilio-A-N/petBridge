@@ -56,7 +56,7 @@ body {
     height: 85vh; 
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-    url('/Planning/Galeria/Guacamayo.jpg');
+    url('../../Planning/Galeria/Guacamayo.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -119,11 +119,11 @@ body {
 .iconoCaja{
     font-size: 25px;
 }
-/* --- ESTILOS ESPECÍFICOS PARA PROTECTORAS --- */
+
 
 #areaBusqueda {
     padding: 60px 5%;
-    background-color: #1A2B48; /* El azul oscuro de tu paleta */
+    background-color: #1A2B48; 
     color: white;
     text-align: center;
 }
@@ -171,7 +171,7 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-left: 8px solid #E67E6B; /* Detalle con tu color coral */
+    border-left: 8px solid #E67E6B; 
 }
 
 .infoPrincipal h2 {
@@ -217,13 +217,9 @@ body {
     color: white;
 }
 
-/* ================================================= */
-/* PORTAL DE ADOPCIÓN (adopta.html)         */
-/* ================================================= */
 
-/* --- Banner Superior --- */
 #bannerAdopta {
-    background-color: #1A2B48; /* Azul oscuro corporativo */
+    background-color: #1A2B48;
     color: white;
     text-align: center;
     padding: 60px 20px;
@@ -243,18 +239,16 @@ body {
     opacity: 0.9;
 }
 
-/* --- Contenedor de la Grilla --- */
 #contenedorAdopcion {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Tarjetas responsivas */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
     gap: 40px;
     padding: 60px 10%;
-    background-color: #F8F9F2; /* Tu color de fondo crema */
+    background-color: #F8F9F2; 
 }
 
-/* --- La Tarjeta de Animal (Estilo Premium Coral) --- */
 .tarjetaAnimal {
-    background: #E67E6B; /* Fondo Coral #E67E6B */
+    background: #E67E6B;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(230, 126, 107, 0.3);
@@ -269,7 +263,6 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* --- Sección de la Foto --- */
 .contenedorFoto {
     position: relative;
     height: 280px;
@@ -286,23 +279,22 @@ body {
 }
 
 .contenedorFoto:hover .fotoMascota {
-    transform: scale(1.1); /* Zoom suave al pasar el ratón */
+    transform: scale(1.1); 
 }
 
 .indicadorFotos {
     position: absolute;
     bottom: 15px;
     right: 15px;
-    background: rgba(26, 43, 72, 0.8); /* Azul oscuro transparente */
+    background: rgba(26, 43, 72, 0.8); 
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
-    backdrop-filter: blur(5px); /* Efecto cristal moderno */
+    backdrop-filter: blur(5px); 
 }
 
-/* --- Información del Animal --- */
 .infoAnimal {
     padding: 30px;
     color: white;
@@ -331,7 +323,7 @@ body {
 .enlaceProtectora {
     display: inline-block;
     text-decoration: none;
-    color: #1A2B48; /* Contraste azul oscuro sobre coral */
+    color: #1A2B48; 
     background: rgba(255, 255, 255, 0.25);
     padding: 6px 14px;
     border-radius: 12px;
@@ -345,7 +337,6 @@ body {
     background: rgba(255, 255, 255, 0.4);
 }
 
-/* --- Caja de detalles (Edad/Raza) --- */
 .detallesRapidos {
     display: flex;
     justify-content: space-between;
@@ -357,7 +348,7 @@ body {
 }
 
 .detallesRapidos strong {
-    color: #1A2B48; /* Resaltamos las etiquetas en azul */
+    color: #1A2B48;
 }
 
 .descripcionCorta {
@@ -367,9 +358,8 @@ body {
     color: rgba(255, 255, 255, 0.95);
 }
 
-/* --- El Botón de Acción --- */
 .botonCaja {
-    margin-top: auto; /* Empuja el botón siempre al fondo de la tarjeta */
+    margin-top: auto;
     background-color: #1A2B48;
     color: white;
     padding: 18px;
@@ -393,8 +383,6 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* --- ESTILOS FICHA INDIVIDUAL --- */
-
 .contenedor-ficha {
     padding: 40px 10%;
     background-color: #F8F9F2;
@@ -410,7 +398,6 @@ body {
     box-shadow: 0 15px 40px rgba(0,0,0,0.05);
 }
 
-/* Galería */
 .galeria-animal {
     flex: 1;
 }
@@ -443,7 +430,6 @@ body {
     border: 2px solid #E67E6B;
 }
 
-/* Información */
 .detalle-info {
     flex: 1;
     display: flex;
@@ -503,7 +489,6 @@ body {
     text-decoration: none;
 }
 
-/* Responsive para la ficha */
 @media (max-width: 900px) {
     .layout-ficha {
         flex-direction: column;
@@ -513,7 +498,6 @@ body {
     }
 }
 
-/* --- ESTILOS PORTAL COLABORADOR --- */
 
 #bannerColabora {
     background-color: #1A2B48;
@@ -535,7 +519,7 @@ body {
     background: white;
     border-radius: 20px;
     padding: 30px;
-    border-left: 10px solid #E67E6B; /* Tu color coral marcando el anuncio */
+    border-left: 10px solid #E67E6B; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     transition: 0.3s;
 }
@@ -559,7 +543,7 @@ body {
 }
 
 .etiquetaUrgente {
-    background: #ff4d4d; /* Rojo para urgencias */
+    background: #ff4d4d; 
     color: white;
     padding: 4px 10px;
     border-radius: 6px;
@@ -598,15 +582,12 @@ body {
     justify-content: flex-end;
 }
 
-/* Reutilizamos el botón estético que ya hicimos, pero lo hacemos más pequeño para los anuncios */
 .pieAnuncio .botonCaja {
     width: auto;
     padding: 12px 30px;
 }
 
-/* --- ESTILOS PÁGINA DE LOGIN --- */
 
-/* Clase especial para el body del login para que el fondo sea uniforme */
 .body-login {
     background-color: #F8F9F2;
     display: flex;
@@ -628,8 +609,8 @@ body {
     max-width: 450px;
     padding: 50px 40px;
     border-radius: 30px;
-    box-shadow: 0 20px 50px rgba(26, 43, 72, 0.1); /* Sombra azulada muy suave */
-    border-top: 8px solid #E67E6B; /* Detalle coral en la parte superior */
+    box-shadow: 0 20px 50px rgba(26, 43, 72, 0.1); 
+    border-top: 8px solid #E67E6B; 
     text-align: center;
 }
 
@@ -650,7 +631,6 @@ body {
     font-size: 40px;
 }
 
-/* Estilos de los inputs */
 .formulario-login {
     text-align: left;
 }
@@ -678,7 +658,7 @@ body {
 }
 
 .campo input:focus {
-    border-color: #E67E6B; /* Al escribir, el borde se vuelve coral */
+    border-color: #E67E6B;
     background-color: #fffaf9;
 }
 
@@ -716,16 +696,14 @@ body {
     color: #E67E6B;
 }
 
-/* Reutilizamos tu botonCaja pero aseguramos que ocupe todo el ancho */
 .formulario-login .botonCaja {
     width: 100%;
     margin-top: 10px;
 }
 
-/* --- ESTILOS EXTRA PARA EL REGISTRO --- */
 
 .caja-registro {
-    max-width: 550px; /* Un poco más ancha para los campos dobles */
+    max-width: 550px; 
 }
 
 .selector-tipo {
@@ -760,7 +738,6 @@ body {
     gap: 15px;
 }
 
-/* Ajuste para que el formulario de registro sea más compacto */
 .caja-registro .campo {
     margin-bottom: 15px;
 }
@@ -769,7 +746,6 @@ body {
     padding: 12px;
 }
 
-/* --- ESTILOS PANEL DE CONTROL --- */
 
 .body-panel { background-color: #f0f2f5; }
 
@@ -849,7 +825,6 @@ body {
 
 .tag-estado { background: #e3fcef; color: #006644; padding: 5px 10px; border-radius: 5px; font-size: 12px; font-weight: bold; }
 
-/* Estilos para el Modal (Ventana emergente) */
 .modal {
     display: none;
     position: fixed;
