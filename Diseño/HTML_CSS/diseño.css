@@ -843,3 +843,52 @@ textarea {
     font-family: inherit;
     outline: none;
 }
+
+#piePagina {
+    background-color: #333; /* Un tono oscuro queda muy elegante */
+    color: white;
+    padding: 40px 20px 10px 20px;
+    margin-top: 50px; /* Separa el footer de las cajas de arriba */
+}
+
+.contenedorFooter {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para que en móviles se vea uno debajo de otro */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.columnaFooter {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.columnaFooter h3 {
+    color: #ff9f43; /* Usa un color que combine con tu logo/guacamayo */
+    margin-bottom: 15px;
+}
+
+.columnaFooter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columnaFooter ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.columnaFooter ul li a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 0.8em;
+    color: #999;
+}
